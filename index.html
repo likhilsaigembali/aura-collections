@@ -1,0 +1,293 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURA COLLECTIONS</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #080d19;
+  color: white;
+}
+
+header {
+  background: #101a30;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #3478f6;
+}
+
+header h1 {
+  color: #70a5ff;
+  margin: 0;
+}
+
+nav {
+  background: #152440;
+  padding: 14px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 8px;
+  display: inline-block;
+}
+
+.hero {
+  text-align: center;
+  padding: 65px 20px;
+  background: linear-gradient(135deg, #101a30, #203f79);
+}
+
+.hero h2 {
+  font-size: 36px;
+  color: #8bb6ff;
+}
+
+.hero p {
+  line-height: 1.8;
+}
+
+.button {
+  display: inline-block;
+  background: #3478f6;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  padding: 35px 18px;
+  text-align: center;
+}
+
+h2 {
+  color: #80adff;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: #111d33;
+  padding: 22px;
+  border: 1px solid #2d4268;
+  border-radius: 14px;
+}
+
+.card .icon {
+  font-size: 42px;
+}
+
+.card h3 {
+  color: #a5c5ff;
+}
+
+.card p {
+  color: #c4cee0;
+  line-height: 1.6;
+}
+
+.contact {
+  background: #111d33;
+  line-height: 1.9;
+}
+
+footer {
+  text-align: center;
+  background: #050913;
+  color: #aab8d0;
+  padding: 22px;
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>AURA COLLECTIONS</h1>
+  <p>MOBILES • ACCESSORIES • REPAIR</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#products">Products</a>
+  <a href="#services">Repair</a>
+  <a href="#used">Used Mobiles</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+  <h2>Smart Choices.<br>Better Connections.</h2>
+
+  <p>
+    Your local destination for mobile accessories,
+    electronic components, mobile repairs and
+    second-hand phones in Rajam.
+  </p>
+
+  <a class="button"
+     href="#products">Explore Products</a>
+
+  <a class="button"
+     href="https://wa.me/916309904876"
+     target="_blank">Contact on WhatsApp</a>
+</div>
+
+<section id="products">
+  <h2>Our Products</h2>
+  <p>Contact us to check availability and prices.</p>
+
+  <div class="products">
+
+    <div class="card">
+      <div class="icon">📱</div>
+      <h3>Mobile Accessories</h3>
+      <p>Phone covers, screen protectors and accessories.</p>
+      <a class="button"
+         href="https://wa.me/916309904876?text=Hello%2C%20I%20need%20mobile%20accessories">
+        Enquire
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔌</div>
+      <h3>Chargers & Cables</h3>
+      <p>Charging adapters, USB cables and power accessories.</p>
+      <a class="button"
+         href="https://wa.me/916309904876?text=Hello%2C%20I%20need%20chargers%20or%20cables">
+        Enquire
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔋</div>
+      <h3>Batteries</h3>
+      <p>Ask us about compatible batteries and availability.</p>
+      <a class="button"
+         href="https://wa.me/916309904876?text=Hello%2C%20I%20need%20a%20battery">
+        Enquire
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="icon">⚙️</div>
+      <h3>Electronic Components</h3>
+      <p>Electronic parts and components for your projects.</p>
+      <a class="button"
+         href="https://wa.me/916309904876?text=Hello%2C%20I%20need%20electronic%20components">
+        Enquire
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="icon">🛠️</div>
+      <h3>Repair Parts & Tools</h3>
+      <p>Ask about parts and tools for mobile repairs.</p>
+      <a class="button"
+         href="https://wa.me/916309904876?text=Hello%2C%20I%20need%20mobile%20repair%20parts">
+        Enquire
+      </a>
+    </div>
+
+    <div class="card" id="used">
+      <div class="icon">📲</div>
+      <h3>Second-hand Mobiles</h3>
+      <p>Ask about available pre-owned phones and prices.</p>
+      <a class="button"
+         href="https://wa.me/916309904876?text=Hello%2C%20show%20me%20available%20second-hand%20mobiles">
+        View Availability
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
+  <h2>Mobile Repair Services</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <div class="icon">🔧</div>
+      <h3>Mobile Repair</h3>
+      <p>Contact us to discuss your mobile problem.</p>
+      <a class="button"
+         href="https://wa.me/916309904876?text=Hello%2C%20I%20need%20mobile%20repair">
+        Ask for Repair
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="icon">🔌</div>
+      <h3>Charging Problems</h3>
+      <p>Ask about battery and charging-related issues.</p>
+      <a class="button"
+         href="https://wa.me/916309904876?text=Hello%2C%20I%20have%20a%20charging%20problem">
+        Get Help
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="icon">📱</div>
+      <h3>Accessories Support</h3>
+      <p>Find accessories suitable for your phone.</p>
+      <a class="button"
+         href="https://wa.me/916309904876?text=Hello%2C%20help%20me%20choose%20an%20accessory">
+        Contact Us
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact AURA COLLECTIONS</h2>
+
+  <p><strong>Location:</strong> Rajam, Vizianagaram District,
+  Andhra Pradesh – 532127</p>
+
+  <p><strong>Phone:</strong> +91 6309904876</p>
+
+  <a class="button"
+     href="tel:+916309904876">Call Now</a>
+
+  <a class="button"
+     href="https://wa.me/916309904876"
+     target="_blank">WhatsApp Us</a>
+</section>
+
+<footer>
+  <p>© 2026 AURA COLLECTIONS</p>
+  <p>Mobiles • Accessories • Repair</p>
+  <p>Rajam, Andhra Pradesh</p>
+</footer>
+
+</body>
+</html>
+```
